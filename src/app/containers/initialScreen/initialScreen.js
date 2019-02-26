@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Image, Button } from "react-native-elements";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
@@ -12,8 +12,8 @@ class initialScreen extends Component {
       <View style={styles.container}>
         <View style={styles.logo}>
           <Image
-            source={require("../../utilities/images/customLogo.png")}
-            style={{ width: 200, height: 200 }}
+            source={require("../../utilities/images/GoOutLogo.jpg")}
+            style={{ width: 200, height: 250 }}
           />
         </View>
         <View style={styles.buttonBox}>
@@ -21,6 +21,9 @@ class initialScreen extends Component {
         </View>
         <View style={styles.buttonBox}>
           <Button title="Criar partida" style={styles.defaultButton} />
+        </View>
+        <View>
+          <Text style={styles.brandStyle}> @BlueDot Technologies Co.</Text>
         </View>
       </View>
     );

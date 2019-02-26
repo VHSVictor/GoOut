@@ -9,7 +9,7 @@ export default StyleSheet.create({
     justifyContent: "center",
     backgroundColor: Colors.white
   },
-  logo: {},
+  logo: { padding: 50 },
   buttonBox: {
     width: 280,
     paddingBottom: 20
@@ -18,5 +18,10 @@ export default StyleSheet.create({
     borderColor: Colors.black,
     textAlign: "center",
     fontSize: 20
+  },
+  brandStyle: {
+    fontSize: 12,
+    color: Colors.brandColor,
+    marginTop: 80
   }
 });
